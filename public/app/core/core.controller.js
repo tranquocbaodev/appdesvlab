@@ -50,7 +50,6 @@
       window.onscroll = angular.bind(this, function(){
         vmc.scrollPos = document.body.scrollTop || document.documentElement.scrollTop || 0;
         $scope.$digest();
-        console.log(vmc.scrollPos);
         if (vmc.scrollPos >= ($window.innerHeight)) {
           angular.element(document.querySelectorAll(".scroll-top")).removeClass("hide");
         }else{

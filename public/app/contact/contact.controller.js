@@ -13,13 +13,15 @@
 
         $scope.setHeightForBanner = function () {
           $timeout(function(){
-           if ($window.innerWidth < 568) {  
-             var heightSet = $window.innerWidth * 3/4;
-             angular.element(document.querySelectorAll(".for-banner")).css("height",heightSet + "px");
-           }else if($window.innerWidth > 767 && $window.innerWidth < 1024){
-             var heightSet = $window.innerWidth * 3/4;
-             angular.element(document.querySelectorAll(".for-banner")).css("height",heightSet + "px");
-           }
+            if ($window.innerWidth < 568) {  
+              var heightSet = $window.innerWidth * 3/4;
+              angular.element(document.querySelectorAll(".for-banner")).css("height",heightSet + "px");
+            }else if($window.innerWidth > 767 && $window.innerWidth < 1024){
+              var heightSet = $window.innerWidth * 3/4;
+              angular.element(document.querySelectorAll(".for-banner")).css("height",heightSet + "px");
+            }else{
+              angular.element(document.querySelectorAll(".for-banner")).css("height",576 + "px");
+            }
           }, 100);
         }
 

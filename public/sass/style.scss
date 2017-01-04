@@ -288,6 +288,11 @@ input, select, textarea {
 			height: 22px;
 			border-radius: 50%;
 			background-color: #f5eb22;
+			-webkit-filter: blur(2px);
+			  -moz-filter: blur(2px);
+			  -o-filter: blur(2px);
+			  -ms-filter: blur(2px);
+			  filter: blur(2px);
 		}
 		.line-d3 {
 			display: block;
@@ -1713,6 +1718,11 @@ path {
 		}
 		&.active {
 			background-color: #f5eb22;
+			-webkit-filter: blur(2px);
+			  -moz-filter: blur(2px);
+			  -o-filter: blur(2px);
+			  -ms-filter: blur(2px);
+			  filter: blur(2px);
 		}
 	}
 }
