@@ -1,0 +1,815 @@
+//Media Queries for Standard Devices
+
+@media only screen
+and (min-width : 320px)
+and (max-width : 991px)  {
+	//Icons
+	.icon {
+		background-image: url(../i/mobi/icon.png);
+		background-position: 0 0;
+		background-size: 352px 68px;
+		-webkit-background-size: 352px 68px;
+		-moz-background-size: 352px 68px;
+	}
+	.container-fluid {
+		min-width: 320px;
+	}
+
+	//For Icon Banner
+	.for-banner {
+		.cubic-box {
+			width: 80%;
+			height: 80px;
+			top: calc(50% - 40px);
+		}
+		.show-side {
+			display: block;
+			width: 100%;
+			height: 44px;
+			top: 10px;
+			left: 0;
+			.icon-show {
+				display: block;
+				width: 20px;
+				height: 21px;
+				background-position: -32px 0px;
+				position: absolute;
+				top: 0;
+				left: 10px;
+				margin:0;
+			}
+			.icon-search {
+				display: block;
+				width: 20px;
+				height: 21px;
+				background-position: 0 0px;
+				position: absolute;
+				top: 0;
+				right: 10px;
+				margin:0;
+			}
+			.name-page {
+				display: block;
+				width: 100%;
+				font-size: 16px;
+				color: #fff;
+				text-transform: uppercase;
+				text-align: center;
+				font-weight: 600;
+				height: 21px;
+				line-height: 21px;
+			}
+		}
+		.banner-top {
+			height: 100px;
+			position: relative;
+			top: calc(50% - 50px);
+			img {
+				width: 320px;
+				height: 100px;
+			}
+		}
+	}
+
+	//For Service
+	.for-service {
+		display: block;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		.cover {
+			width: 100%;
+			padding-top: 29px;
+			//heading
+			.heading-one {
+				padding: 0 10px;
+				.line-heading {
+					width: calc( 100% - 58px );
+					left: auto;
+					right: 10px;
+					bottom: -5px;
+				}
+				.icon-heading {
+					width: 29px;
+					height: 29px;
+					background-position: 0 -38px;
+					position: relative;
+					top: 3px;
+				}
+				.text-heading {
+					font-size: 20px;
+					margin-left: 5px;
+					font-weight: 600;
+				}
+			}
+			// List Service
+			.list-service {
+				display: block;
+				width: 100%;
+				padding-top: 50px;
+				li {
+					display: block;
+					width: 100%;
+					float: none;
+					padding-top: 0;
+					margin-bottom: 52px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+					.item {
+						display: none;
+					}
+					.item-m {
+						display: block;
+						width: 106px;
+						height: 106px;
+						margin: 0 auto;
+						margin-bottom: 21px;
+					}
+					.green-text {
+						display: block;
+						font-size: 20px;
+						font-weight: 600;
+					}
+					.dark-text {
+						display: block;
+						font-size: 16px;
+						line-height: 30px;
+						margin-top: 8px;
+						text-align: justify;
+					}
+				}
+			}
+		}
+	}
+
+	// For Intro
+	.for-intro.for-service {
+		margin-top: 28px;
+		.cover {
+			padding-top: 17px;
+			.heading-one {
+				.icon-heading {
+					width: 30px;
+					height: 30px;
+					background-position: -34px -38px;
+				}
+			}
+			// Main Intro
+			.main-intro {
+				.img-intro {
+					width: 100%;
+					ul {
+						width: 375px;
+						margin: 0 auto;
+						padding: 0 12px;
+						padding-top: 34px;
+						overflow: hidden;
+						li {
+
+							img {
+								width: 167px;
+								height: 128px;
+								margin-bottom: 17px;
+							}
+						}
+					}
+				}
+				.text-intro {
+					width: 100%;
+					padding: 0 10px;
+					.blue-text {
+						font-size: 20px;
+						font-weight: 600;
+						line-height: 28px;
+					}
+					.btn-more {
+						margin: 0 auto;
+						float: none;
+						margin-top: 33px;
+						font-weight: 400;
+					}
+				}
+			}
+		}
+	}
+
+	//For Product
+	.for-product.for-service {
+		padding-bottom: 95px;
+		.cover {
+			padding-top: 21px;
+			.heading-one {
+				.icon-heading {
+					width: 31px;
+					height: 30px;
+					background-position: -69px -38px;
+				}
+			}
+			// main pro
+			.main-pro {
+				width: 100%;
+				.type  {
+					top: -22px;
+					ul {
+						li {
+							a.active {
+								position: relative;
+								right: 10px;
+							}
+						}
+					}
+				}
+				 .product-items {
+				 	width: 100%;
+				 	ul {
+				 		width: 100%;
+				 		padding-top: 34px;
+				 		li {
+							width: 100%;
+							padding: 0 16px;
+							margin-bottom: 10px;
+							.active {
+								right: 10px;
+								position: relative;
+							}
+							img {
+								width: 343px;
+								height: 231px;
+								margin: 0 auto;
+							}
+				 		}
+				 	}
+				 }
+			}
+		}
+	}
+
+	//For Package
+	.for-package.for-service {
+		width: 100%;
+		margin-top: 20px;
+
+		.cover {
+			width: 100%;
+			padding-top: 26px;
+			.heading-one {
+				.icon-heading {
+					width: 30px;
+					height: 30px;
+					background-position: -105px -38px;
+				}
+			}
+
+		}
+	}
+
+	//Chat With Us
+	.chat-with-us {
+		display: block;
+		width: calc( 100% - 50px );
+		left: 25px;
+		&.active {
+			.blue-cover  {
+				i.icon {
+					-ms-transform: rotate(0deg);
+					-webkit-transform: rotate(0deg);
+					transform: rotate(0deg);
+				}
+			}
+			.cover-white {
+				.next-btn {
+					border-radius: 8px;
+					-webkit-border-radius: 8px;
+					-moz-border-radius: 8px;
+					float: none;
+					margin: 0 auto;
+					margin-top: 20px;
+				}
+			}
+		}
+		.blue-cover {
+			display: block;
+			width: 100%;
+			i.icon {
+				background-position: -127px 0;
+				-ms-transform: rotate(180deg);
+				-webkit-transform: rotate(180deg);
+				transform: rotate(180deg);
+
+			}
+		}
+	}
+
+	//Footer
+	.for-footer {
+		height: 271px;
+		.cover-footer {
+			width: 100%;
+			padding-top: 27px;
+			.letter-img {
+				display: block;
+				width: 86px;
+				height: 54px;
+				position: relative;
+				right: auto;
+				top: auto;
+				margin: 0 auto;
+			}
+			.input-reg {
+				margin-top: 31px;
+				padding: 0 13px;
+			}
+			//navigation
+			.navi-foot {
+				display: block;
+				width: 375px;
+				margin: 0 auto;
+				padding: 0 13px;
+				padding-top: 39px;
+
+				li {
+					margin-right: 26px;
+					padding-bottom: 5px;
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+			//Social
+			.list-social {
+				display: block;
+				width: 155px;
+				margin: 0 auto;
+				padding: 0;
+				padding-top: 4px;
+				li {
+					&.face {
+						a {
+							width: 13px;
+							height: 21px;
+							background-position: -150px -3px;
+						}
+					}
+					&.twin {
+						margin-left: 52px;
+						a {
+							width: 20px;
+							height: 19px;
+							background-position: -175px -5px;
+							margin-top: 21px;
+						}
+					}
+					&.google {
+						margin-left: 43px;
+						a {
+							width: 27px;
+							height: 13px;
+							background-position: -200px -1px;
+						}
+					}
+				}
+			}
+
+		}
+	}
+
+	// For Search
+	.main-search .input .search-icon {
+		width: 17px;
+		height: 17px;
+		background-position: -258px 0;
+	}
+
+	// For Intro Company
+	.for-intro-f {
+		display: block;
+		width: 100%;
+		padding: 0;
+		.cover {
+			width: 100%;
+			padding: 0 10px;
+			.img-left {
+				display: block;
+				width: 355px;
+				height: auto;
+				position: absolute;
+				top: 16px;
+				left: 50%;
+				margin-left: -177.5px;
+				img:first-child {
+					width: 294px;
+					height: 184px;
+				}
+				img:last-child {
+					width: 221px;
+					height: 140px;
+					top: 117px;
+				}
+
+			}
+			.text-right-side {
+				display: block;
+				width: 100%;
+				padding: 0;
+				padding-top: 24px;
+				.heading-one {
+					.icon-heading {
+						width: 30px;
+						height: 30px;
+						background-position: -34px -38px;
+					}
+					.text-heading {
+						font-size: 20px;
+						margin-left: 5px;
+						font-weight: 600;
+					}
+					.line-heading {
+						width: calc( 100% - 58px );
+						left: auto;
+						right: 10px;
+						bottom: -5px;
+					}
+
+				}
+				.blue-text {
+					display: block;
+					font-size: 20px;
+					color: #077bb7;
+					margin-top: 244px;
+
+				}
+				.grey-text {
+					margin-top: 14px;
+				}
+			}
+		}
+	}
+
+	// Why Choose
+	.for-intro-f.why-chose {
+		margin-top: 22px;
+		height: 570px;
+		.cover {
+			.img-left img:first-child {
+				left: 0;
+			}
+			.text-right-side {
+				.blue-text  {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	// Desv Lab Have
+	.desvlab-have {
+		display: block;
+		width: 100%;
+		ul {
+			display: block;
+			width: 100%;
+			padding-top: 20px;
+			li {
+				float: none;
+				display: block;
+				width: 100%;
+				text-align: center;
+				margin-bottom: 54px;
+				.green-text {
+					margin-top: 29px;
+				}
+				.grey-text {
+					padding: 0 41px;
+				}
+				img {
+					margin: 0 auto;
+				}
+
+
+				&:nth-child(1) {
+					padding: 0;
+				}
+				&:nth-child(2) {
+					padding: 0;
+					.grey-text {
+						padding: 0 36px;
+					}
+				}
+				&:nth-child(3) {
+					padding: 0;
+					left: 0;
+					.grey-text {
+						padding: 0 35px;
+					}
+				}
+			}
+		}
+	}
+
+	// FAQ
+	.for-service.for-faq .cover {
+		padding-top: 23px;
+		.heading-one {
+			.icon-heading {
+				width: 30px;
+				height: 30px;
+				background-position: -140px -38px;
+			}
+		}
+		.intro-faq {
+			margin-top: 23px;
+			padding: 0 10px;
+			text-align: justify;
+		}
+
+		//list FAQ
+		.list-faq {
+			display: block;
+			width: 100%;
+			padding-bottom: 35px;
+			ul {
+				width: 100%;
+				li {
+					width: 100%;
+					padding: 0 10px;
+					margin-bottom: 12px;
+					&:last-child {
+						margin-bottom: 18px;
+					}
+					&.active {
+						 .question-here {
+						 	a {
+						 		background-position: -287px 0;
+						 	}
+						 }
+					}
+					.solve-questions {
+						margin-bottom: 0;
+						padding-left: 55px;
+					}
+					.question-here {
+						height: auto;
+						margin-bottom: 10px;
+						a {
+							width: 30px;
+							height: 30px;
+							background-position: -323px 0;
+							top: calc(50% - 15px);
+							left: 10px;
+						}
+						.faq-here {
+							line-height: 25px;
+							padding: 5px 0;
+							padding-left: 55px;
+							padding-right: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.for-contact .cover {
+		padding-top: 21px;
+		 .map-cover-here {
+		 	width: calc( 100% - 20px );
+		 	height: 184px;
+		 	margin-left: 10px;
+		 	margin-top: 33px;
+		 }
+		 //contact us
+		  .contact-here {
+		  	width: 100%;
+		  	padding: 0 10px;
+		  	.btn-send {
+		  		margin: 0 auto;
+		  	}
+		  	.left-address {
+		  		display: block;
+		  		float: none;
+		  		width: 100%;
+		  		padding-top: 26px;
+		  		ul {
+		  			li {
+		  				display: block;
+		  				padding-bottom: 21px;
+		  				.blue-text {
+							font-size: 20px;
+							margin-bottom: 20px;
+		  				}
+		  				.dark-text {
+		  					font-size: 16px;
+		  				}
+		  			}
+		  		}
+		  	}
+		  	.mail-for-us {
+		  		display: block;
+		  		float: none;
+		  		width: 100%;
+		  		padding-top: 0;
+		  		padding-bottom: 60px;
+		  		.blue-text {
+		  			font-size: 20px;
+		  			margin-bottom: 8px;
+		  		}
+		  		.dark-text {
+		  			line-height: 30px;
+		  			margin-bottom: 22px;
+		  		}
+		  		.small-input {
+		  			width: 100%;
+		  			margin: 0;
+		  			margin-bottom: 18px;
+		  		}
+		  	}
+		  }
+	}
+	.scroll-top {
+		background-position: -323px -39px;
+		right: 25px;
+	}
+
+	// d3 js
+	.name-box {
+		font-size: 28px;
+		bottom: 42px;
+	}
+	.for-banner .cubic-box .point-run {
+		top: 14px;
+	    left: -6px;
+		width: 12px;
+		height: 12px;
+	}
+	.axis path,
+	.axis line {
+	    fill: none;
+	    stroke: grey;
+	    stroke-width: 1;
+	    shape-rendering: crispEdges;
+	}
+
+	path {
+	    stroke-width: 1.5;
+	}
+	.light-desk {
+		display: none;
+	}
+	.light-mobi {
+		display: block;
+		img.on {
+			width: 58px;
+			height: 85px;
+		}
+		img.off {
+			width: 67.5px;
+			height: 88.5px;
+		}
+	}
+
+	.for-banner .cubic-box .light-show {
+	    bottom: -54px;
+	    left: -29px;
+	}
+	.for-banner .cubic-box .light-show.off {
+	    left: -33px;
+	    bottom: -46px;
+	}
+
+	// Fixed n Updated
+	.for-intro.for-service .cover .main-intro .text-intro .dark-text {
+		text-align: justify;
+	}
+	.for-footer .cover-footer .input-reg input {
+		width: calc(100% - 90px);
+	}
+	.for-footer .cover-footer .input-reg .btn-reg {
+		width: 80px;
+	}
+
+
+}
+
+
+@media only screen
+and (min-width : 320px)
+and (max-width : 568px)
+and (orientation: landscape) {
+	.cover-navigation {
+		height: 320px;
+		overflow: scroll;
+		top: 0;
+		margin-top: 0;
+	}
+	.overlay {
+		overflow: hidden;
+	}
+}
+
+// for Iphone 5 only
+@media only screen
+and (min-width : 320px)
+and (max-width : 374px) {
+	.for-intro.for-service .cover .main-intro .img-intro ul{
+		width: 320px;
+	}
+	.for-intro.for-service .cover .main-intro .img-intro ul li img {
+		width: 141px;
+	}
+	.for-product.for-service .cover .main-pro .product-items ul li img {
+		width: 295px;
+	}
+	.for-footer .cover-footer .navi-foot {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		display: -webkit-flex;
+		webkit-justify-content: space-around;;
+		-webkit-box-pack: space-around;;
+		-ms-flex-pack: space-around;;
+		justify-content: space-around;;
+		width: 100%;
+		padding: 39px 5px 0;
+	}
+	.for-footer .cover-footer .navi-foot li {
+		margin: 0;
+	}
+	.for-intro-f .cover .img-left {
+		width: 320px;
+	}
+	.for-intro-f .cover .img-left img:first-child {
+		width: 253px;
+	}
+	.for-intro-f .cover .img-left img:last-child {
+		left: 26px;
+	}
+	.for-intro-f.why-chose .cover .img-left img:first-child {
+		left: 26px;
+		right: auto;
+	}
+	.for-intro-f.why-chose .img-left img:last-child {
+		right: 0;
+		left: auto;
+	}
+	.for-intro-f.why-chose {
+		height: 637px;
+	}
+}
+
+// free desktop
+@media only screen
+and (min-width : 992px)
+and (max-width : 1279px) {
+	.container-fluid {
+		min-width: auto;
+	}
+	.for-service {
+		padding: 0 20px;
+		.cover {
+			width: 100%;
+		}
+	}
+	.for-product.for-service .cover .main-pro .product-items ul {
+		width: 952px;
+		li {
+			img {
+				width: 465px;
+			}
+		}
+	}
+	.for-service .cover .list-service li .item-m {
+		display: none;
+	}
+	.show-side .name-page {
+		display: none;
+	}
+	.for-footer .cover-footer .letter-img.hidden-xs {
+		display: none;
+	}
+	.for-footer .cover-footer .letter-img {
+		right: -200px;
+	}
+	.for-intro-f {
+		padding: 0 20px;
+		.cover {
+			width: 952px;
+		}
+	}
+	.for-intro-f .cover .text-right-side {
+		padding-left: 23px;
+		width: calc( 100% - 513px );
+	}
+	.for-intro-f .cover .img-left {
+		height: 480px;
+	}
+	.for-intro-f .cover .img-left {
+		width: 470px;
+	}
+	.desvlab-have ul {
+		padding-bottom: 63px;
+	}
+	.for-service.for-faq {
+		padding-bottom: 50px;
+	}
+}
+// ---End--

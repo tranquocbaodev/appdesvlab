@@ -1,0 +1,72 @@
+<div class="cover-page" data-ng-controller="contactCtrl as vm">
+	<div class="for-service for-contact">
+		<div class="cover">
+			<h2 class="heading-one">
+				<span class="icon icon-heading"></span>
+				<span class="text-heading">
+					Liên hệ chúng tôi
+				</span>
+				<i class="line-heading"></i>
+			</h2>
+			<!-- Heading -->
+			<div class="map-cover-here" id="map">
+			</div>
+			<!-- Map Here -->
+			<div class="contact-here">
+				<div class="left-address">
+					<ul>
+						<li>
+							<p class="blue-text">
+								Địa chỉ:
+							</p>
+							<p class="dark-text">
+								{{vm.dataJson.address}}
+							</p>
+						</li>
+						<li>
+							<p class="blue-text">
+								Điện thoại:
+							</p>
+							<p class="dark-text" data-ng-repeat="phone in vm.dataJson.phones">
+								{{phone.phone}}
+							</p>
+						</li>
+						<li>
+							<p class="blue-text">
+								E-mail:
+							</p>
+							<p class="dark-text">
+								{{vm.dataJson.email}}
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div class="mail-for-us">
+					<p class="blue-text">
+						Thông tin liên quan
+					</p>
+					<p class="dark-text">
+						Email cho chúng tôi với bất kỳ câu hỏi hoặc thắc mắc.
+					</p>
+					<div class="clear"></div>
+					<div class="small-input">
+						<input type="text" placeholder="Tên">
+					</div>
+					<div class="small-input">
+						<input type="text" placeholder="Email">
+					</div>
+					<div class="small-input last">
+						<input type="text" placeholder="Điện thoại">
+					</div>
+					<div class="big-input small-input">
+						<textarea class="leave-mess" placeholder="Tin nhắn"></textarea> 
+					</div>
+					<div class="clear"></div>
+					<a href="javascript:;" class="btn-send">Gửi</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Cover-page -->

@@ -1,0 +1,118 @@
+<div class="cover-page" data-ng-controller="dashboardCtrl as vm">
+    <div class="for-service">
+        <div class="cover">
+            <h2 class="heading-one">
+                <span class="icon icon-heading"></span>
+                <span class="text-heading">
+                    Các dịch vụ tiêu biểu
+                </span>
+                <i class="line-heading"></i>
+            </h2>
+            <!-- Heading -->
+            <ul class="list-service">
+                <li>
+                    <img src="i/ser01.png" alt="item" class="item">
+                    <img src="i/mobi/ser01.png" alt="item-m " class="item-m hidden-lg">
+                    <p class="green-text">
+                        Thiết kế web
+                    </p>
+                    <p class="dark-text">
+                        Chúng tôi đem đến cho khách hàng những thiết kế web hiện đại nhất, theo xu hướng chung của thế giới.
+                    </p>
+                </li>
+                <li>
+                    <img src="i/ser02.png" alt="item" class="item">
+                    <img src="i/mobi/ser02.png" alt="item-m " class="item-m hidden-lg">
+                    <p class="green-text">
+                        Lập trình web
+                    </p>
+                    <p class="dark-text">
+                        Chúng tôi lập trình web trên nhiều nền tảng, theo công nghệ mới nhất của thế giới. Tối ưu hiển thị trên mọi thiết bị.
+                    </p>
+                </li>
+                <li>
+                    <img src="i/ser03.png" alt="item" class="item">
+                    <img src="i/mobi/ser03.png" alt="item-m " class="item-m hidden-lg">
+                    <p class="green-text">
+                        Tư vấn phần mềm
+                    </p>
+                    <p class="dark-text">
+                        Tư vấn các giải pháp công nghệ cho doanh nghiệp tạo dựng thương hiệu, phát triển bền vững. Tư vấn sử dụng các ứng dụng công nghệ hiện đại.
+                    </p>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!-- Services -->
+    <div class="for-service for-intro">
+        <div class="cover">
+            <h2 class="heading-one">
+                <span class="icon icon-heading"></span>
+                <span class="text-heading">
+                    Giới thiệu công ty
+                </span>
+                <i class="line-heading"></i>
+            </h2>
+            <!-- Heading -->
+            <div class="main-intro">
+                <div class="img-intro">
+                    <ul class="list-img">
+                        <li data-ng-repeat="item in vm.dataJson.aboutImages">
+                            <img src="i/info01.png" alt="info01" data-ng-src="{{item.url}}">
+                        </li>
+                    </ul>
+                </div>
+                <!-- Img Intro -->
+                <div class="text-intro">
+                    <p class="blue-text">
+                        {{vm.dataJson.aboutTitle}} 
+                    </p>
+                    <p class="dark-text">
+                        {{vm.dataJson.aboutDesc}} 
+                    </p>
+                    <a href="javascript:;" class="btn-more" data-ng-click="goAbout()">Chi tiết</a>
+                </div>
+                <!-- Text Intro -->
+                <div class="clear"></div>
+            </div>
+            <!-- Main Intro -->
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!-- InTro -->
+    <div class="for-service for-product">
+        <div class="cover">
+            <h2 class="heading-one">
+                <span class="icon icon-heading"></span>
+                <span class="text-heading">
+                    Các Sản phẩm
+                </span>
+                <i class="line-heading"></i>
+            </h2>
+            <!-- Heading -->
+            <div class="main-pro">
+                <div class="type">
+                    <ul>
+                        <li>
+                            <a class="active" href="javascript:;">Xem Tất Cả</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-items">
+                    <ul>
+                        <li data-ng-repeat="item in vm.productsJson.products">
+                            <a href="javascript:;">
+                                <img src="i/pro01.png" alt="item" data-ng-src="{{item.image}}">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Main Product -->
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!-- InTro -->
+</div>
+<!-- Cover-page -->
