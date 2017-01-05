@@ -65,21 +65,21 @@
 	<!-- navigation -->
 	<nav class=" main-navigation hide">
 		<div class="cover-navigation">
-			<ul>
+			<ul data-ng-click="hiddenAllToolTip()">
 				<li>
-					<a href="javascript:;" data-ng-click="goDashboard()" data-ng-class="{active:locationName==='Dashboard'}">Trang chủ</a>
+					<a href="javascript:;" data-ng-click="$event.stopPropagation();goDashboard()" data-ng-class="{active:locationName==='Dashboard'}">Trang chủ</a>
 				</li>
 				<li>
-					<a href="javascript:;" data-ng-click="goAbout()" data-ng-class="{active:locationName==='About'}">Giới thiệu công ty</a>
+					<a href="javascript:;" data-ng-click="$event.stopPropagation();goAbout()" data-ng-class="{active:locationName==='About'}">Giới thiệu công ty</a>
 				</li>
 				<!-- <li>
 					<a href="javascript:;" data-ng-class="{active:locationName==='Collection'}">Bộ sưu tập</a>
 				</li> -->
 				<li>
-					<a href="javascript:;" data-ng-click="goFAQ()" data-ng-class="{active:locationName==='FAQ'}">Hỏi đáp</a>
+					<a href="javascript:;" data-ng-click="$event.stopPropagation();goFAQ()" data-ng-class="{active:locationName==='FAQ'}">Hỏi đáp</a>
 				</li>
 				<li>
-					<a href="javascript:;" data-ng-click="goContact()" data-ng-class="{active:locationName==='Contact'}">Liên hệ</a>
+					<a href="javascript:;" data-ng-click="$event.stopPropagation();goContact()" data-ng-class="{active:locationName==='Contact'}">Liên hệ</a>
 				</li>
 			</ul>
 		</div>

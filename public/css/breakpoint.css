@@ -17,7 +17,7 @@
     display: block;
     width: 100%;
     height: 44px;
-    top: 20px;
+    top: 10px;
     left: 0; }
     .for-banner .show-side .icon-show {
       display: block;
@@ -45,7 +45,8 @@
       text-transform: uppercase;
       text-align: center;
       font-weight: 600;
-      padding-top: 1px; }
+      height: 21px;
+      line-height: 21px; }
   .for-banner .banner-top {
     height: 100px;
     position: relative;
@@ -82,7 +83,7 @@
       .for-service .cover .list-service {
         display: block;
         width: 100%;
-        padding-top: 74px; }
+        padding-top: 50px; }
         .for-service .cover .list-service li {
           display: block;
           width: 100%;
@@ -107,7 +108,8 @@
             display: block;
             font-size: 16px;
             line-height: 30px;
-            margin-top: 8px; }
+            margin-top: 8px;
+            text-align: justify; }
 
   .for-intro.for-service {
     margin-top: 28px; }
@@ -327,7 +329,7 @@
     .desvlab-have ul {
       display: block;
       width: 100%;
-      padding-top: 60px; }
+      padding-top: 20px; }
       .desvlab-have ul li {
         float: none;
         display: block;
@@ -360,7 +362,8 @@
       background-position: -140px -38px; }
     .for-service.for-faq .cover .intro-faq {
       margin-top: 23px;
-      padding: 0 10px; }
+      padding: 0 10px;
+      text-align: justify; }
     .for-service.for-faq .cover .list-faq {
       display: block;
       width: 100%;
@@ -376,18 +379,21 @@
           .for-service.for-faq .cover .list-faq ul li.active .question-here a {
             background-position: -287px 0; }
           .for-service.for-faq .cover .list-faq ul li .solve-questions {
-            margin-bottom: 0; }
+            margin-bottom: 0;
+            padding-left: 55px; }
           .for-service.for-faq .cover .list-faq ul li .question-here {
             height: auto;
             margin-bottom: 10px; }
             .for-service.for-faq .cover .list-faq ul li .question-here a {
               width: 30px;
               height: 30px;
-              background-position: -323px 0; }
+              background-position: -323px 0;
+              top: calc(50% - 15px);
+              left: 10px; }
             .for-service.for-faq .cover .list-faq ul li .question-here .faq-here {
-              line-height: 30px;
-              padding: 9.5px 0;
-              padding-left: 64px;
+              line-height: 25px;
+              padding: 5px 0;
+              padding-left: 55px;
               padding-right: 10px; }
 
   .for-contact .cover {
@@ -436,6 +442,15 @@
     background-position: -323px -39px;
     right: 25px; }
 
+  .cover-navigation {
+    margin-top: -90px; }
+
+  .main-navigation ul li {
+    margin-bottom: 25px; }
+
+  .main-navigation ul li a {
+    font-size: 20px; }
+
   .name-box {
     font-size: 28px;
     bottom: 42px; }
@@ -474,7 +489,16 @@
 
   .for-banner .cubic-box .light-show.off {
     left: -33px;
-    bottom: -46px; } }
+    bottom: -46px; }
+
+  .for-intro.for-service .cover .main-intro .text-intro .dark-text {
+    text-align: justify; }
+
+  .for-footer .cover-footer .input-reg input {
+    width: calc(100% - 90px); }
+
+  .for-footer .cover-footer .input-reg .btn-reg {
+    width: 80px; } }
 @media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) {
   .cover-navigation {
     height: 320px;
@@ -495,10 +519,19 @@
     width: 295px; }
 
   .for-footer .cover-footer .navi-foot {
-    width: 320px; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    webkit-justify-content: space-around;
+    -webkit-box-pack: space-around;
+    -ms-flex-pack: space-around;
+    justify-content: space-around;
+    width: 100%;
+    padding: 39px 5px 0; }
 
   .for-footer .cover-footer .navi-foot li {
-    margin-right: 11px; }
+    margin: 0; }
 
   .for-intro-f .cover .img-left {
     width: 320px; }
@@ -565,5 +598,9 @@
 
   .for-service.for-faq {
     padding-bottom: 50px; } }
+@media only screen and (min-width: 568px) and (max-width: 991px) {
+  .for-banner .banner-top {
+    width: 320px;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=breakpoint.css.map */

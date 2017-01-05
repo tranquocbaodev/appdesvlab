@@ -15,6 +15,8 @@
           angular.element(document.querySelectorAll(".main-search")).addClass("hide");
           angular.element(document.querySelectorAll(".overlay")).addClass("hide");
           angular.element(document.querySelectorAll("body")).removeClass("lock-scroll");
+          angular.element(document.querySelectorAll(".for-banner")).parent().removeClass("for-blur");
+          angular.element(document.querySelectorAll(".container-fluid")).removeClass("for-blur");
       }
 
       $scope.goDashboard =function () {
@@ -46,7 +48,6 @@
       }
 
       vmc.scrollPos = 0;
-
       window.onscroll = angular.bind(this, function(){
         vmc.scrollPos = document.body.scrollTop || document.documentElement.scrollTop || 0;
         $scope.$digest();

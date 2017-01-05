@@ -16,12 +16,16 @@ $(function() {
 					$(".main-navigation").removeClass("hide");
 					$(".overlay").removeClass("hide");
 					$("body").addClass("lock-scroll");
+					$(".for-banner").parent().addClass("for-blur");
+					$(".container-fluid").addClass("for-blur");
 				});
 
 				$(".for-banner .show-side .icon-search").click(function (argument) {
 					$(".main-search").removeClass("hide");
 					$(".overlay").removeClass("hide");
 					$("body").addClass("lock-scroll");
+					$(".for-banner").parent().addClass("for-blur");
+					$(".container-fluid").addClass("for-blur");
 				});
 
 				$(".overlay").click(function (argument) {
@@ -29,6 +33,8 @@ $(function() {
 					$(".main-navigation").addClass("hide");
 					$(".overlay").addClass("hide");
 					$("body").removeClass("lock-scroll");
+					$(".for-banner").parent().removeClass("for-blur");
+					$(".container-fluid").removeClass("for-blur");
 				});
 
 				//Anime svg
@@ -140,8 +146,8 @@ $(function() {
 			restrict: 'A',
 			link: function(scope, element, attrs, ngModelCtrl) {
 				element.click(function () {
-					$(window).scrollTop( 0 );
-					
+					var body = $("html, body");
+					body.stop().animate({scrollTop:0}, '500', 'swing');
 				});
 			}
 		}
