@@ -3,7 +3,6 @@ $(function() {
 		.directive('headerTemp', headerTemp)
 		.directive('footerTemp', footerTemp)
 		.directive('buttonScroll', buttonScroll);
-		
 	function headerTemp() {
 		return {
 			restrict: 'A',
@@ -58,7 +57,7 @@ $(function() {
 						translateX: path,
 						translateY: path,
 						rotate: path,
-						duration: 8000,
+						duration: 4000,
 						direction: 'reverse',
 						loop: false,
 						easing: 'linear',
@@ -120,6 +119,12 @@ $(function() {
 					  	},
 					  	complete: function(animation) {
 					  		showLight();
+					  		var checkShowMenu = $(".overlay").hasClass('hide');
+					  		if ($(".dashboard-page-scroll").length && $(window).width()>=1280 && checkShowMenu && $(window)[0].scrollY ===0 ) {
+					  			var body = $("html, body");
+					  			var heightBanner = $(window).height();
+					  			body.stop().animate({scrollTop:heightBanner}, 1500);
+					  		}
 					  	}
 					});
 				}, 100);

@@ -449,7 +449,8 @@ and (max-width : 991px)  {
 	// Why Choose
 	.for-intro-f.why-chose {
 		margin-top: 22px;
-		height: 570px;
+		height: auto;
+		padding-bottom: 20px;
 		.cover {
 			.img-left img:first-child {
 				left: 0;
@@ -466,16 +467,19 @@ and (max-width : 991px)  {
 	.desvlab-have {
 		display: block;
 		width: 100%;
+		.cover {
+			padding: 0;
+		}
 		ul {
 			display: block;
 			width: 100%;
-			padding-top: 20px;
 			li {
 				float: none;
 				display: block;
 				width: 100%;
 				text-align: center;
-				margin-bottom: 54px;
+				margin-bottom: 34px;
+				padding-top: 20px;
 				.green-text {
 					margin-top: 29px;
 				}
@@ -489,9 +493,13 @@ and (max-width : 991px)  {
 
 				&:nth-child(1) {
 					padding: 0;
+					padding-top: 20px;
 				}
 				&:nth-child(2) {
 					padding: 0;
+					padding-top: 20px;
+					padding-bottom: 20px;
+					background: #f4f4f4;
 					.grey-text {
 						padding: 0 36px;
 					}

@@ -9,6 +9,7 @@
     //login
     function contactCtrl($scope, $filter, $location,dataSvc,$timeout,$window) {
        	var vm = this;
+        angular.element(document.querySelectorAll("body")).scrollTop(0,0);
         $scope.changeLocation("Contact");
 
         $scope.setHeightForBanner = function () {

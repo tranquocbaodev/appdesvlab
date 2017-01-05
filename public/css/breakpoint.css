@@ -317,7 +317,8 @@
 
   .for-intro-f.why-chose {
     margin-top: 22px;
-    height: 570px; }
+    height: auto;
+    padding-bottom: 20px; }
     .for-intro-f.why-chose .cover .img-left img:first-child {
       left: 0; }
     .for-intro-f.why-chose .cover .text-right-side .blue-text {
@@ -326,16 +327,18 @@
   .desvlab-have {
     display: block;
     width: 100%; }
+    .desvlab-have .cover {
+      padding: 0; }
     .desvlab-have ul {
       display: block;
-      width: 100%;
-      padding-top: 20px; }
+      width: 100%; }
       .desvlab-have ul li {
         float: none;
         display: block;
         width: 100%;
         text-align: center;
-        margin-bottom: 54px; }
+        margin-bottom: 34px;
+        padding-top: 20px; }
         .desvlab-have ul li .green-text {
           margin-top: 29px; }
         .desvlab-have ul li .grey-text {
@@ -343,9 +346,13 @@
         .desvlab-have ul li img {
           margin: 0 auto; }
         .desvlab-have ul li:nth-child(1) {
-          padding: 0; }
+          padding: 0;
+          padding-top: 20px; }
         .desvlab-have ul li:nth-child(2) {
-          padding: 0; }
+          padding: 0;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          background: #f4f4f4; }
           .desvlab-have ul li:nth-child(2) .grey-text {
             padding: 0 36px; }
         .desvlab-have ul li:nth-child(3) {

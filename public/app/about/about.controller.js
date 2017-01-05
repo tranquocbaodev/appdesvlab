@@ -9,6 +9,7 @@
     //login
     function aboutCtrl($scope, $filter, $location,dataSvc,$timeout,$window) {
       var vm = this;
+      angular.element(document.querySelectorAll("body")).scrollTop(0,0);
       $scope.changeLocation("About");
       //set height banner
       $scope.setHeightForBanner = function () {

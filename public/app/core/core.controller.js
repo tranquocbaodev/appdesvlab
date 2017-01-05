@@ -47,15 +47,13 @@
         $scope.locationName = title;
       }
 
-      vmc.scrollPos = 0;
-      window.onscroll = angular.bind(this, function(){
-        vmc.scrollPos = document.body.scrollTop || document.documentElement.scrollTop || 0;
-        $scope.$digest();
-        if (vmc.scrollPos >= ($window.innerHeight)) {
-          angular.element(document.querySelectorAll(".scroll-top")).removeClass("hide");
-        }else{
-          angular.element(document.querySelectorAll(".scroll-top")).addClass("hide");
-        }
+      angular.element($window).bind("scroll", function() {
+        var heightBanner = angular.element(document.querySelectorAll(".for-banner"))[0].clientHeight;
+          if ($window.scrollY >= heightBanner) {
+              angular.element(document.querySelectorAll(".scroll-top")).removeClass("hide");
+          }else{
+              angular.element(document.querySelectorAll(".scroll-top")).addClass("hide");
+          }
       });
     }
 })();
