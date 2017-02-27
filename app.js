@@ -26,7 +26,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 3500;
 
 app.listen(port, function () {
   console.log('server listening on port %d in %s mode', port, app.get('env'));
