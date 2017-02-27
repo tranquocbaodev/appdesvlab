@@ -8,10 +8,6 @@
         /*
          * Our reusable cross app code modules
          */
-        'ui.router',
-        'app.dashboard',
-        'app.about',
-        'app.contact',
-        'app.faq'
+        'ui.router'
     ]);
 })();

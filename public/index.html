@@ -1,101 +1,51 @@
 <!DOCTYPE html>
 <html lang="en" data-ng-app="app" id="ng-app" data-ng-controller="Core as vmc">
+	<head lang="en">
+		<meta charset="UTF-8">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui' />
+		<title>DESVLAB Co., Ltd</title>
+		<!-- CSS Style -->
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+		<!-- FONT -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+		<!-- Link Swiper'sCSS -->
+		<link rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css">
+		<!-- Full page -->
+		<link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css" />
 
-<head lang="en">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>DESVLAB</title>
-	<link rel="icon" href="favicon.png">
-	<!-- CSS Style -->
-	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
-	<!-- jquery ui css -->
-	<link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.css">
-	<!-- Font Open Sans -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-	<!-- Main CSS -->
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link rel="stylesheet" type="text/css" href="css/breakpoint.css" />
-	<!-- google map -->
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD8Hapzg41flr_JsCB68J_RRT5VuJ5VDs"></script>
-</head>
+		<!-- Main CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!-- favicon -->
+		<link rel="shortcut icon" href="favicon.png">
 
-<body>
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="app/blocks/block-directive.js"></script>
-	<script src="bower_components/angular/angular.js"></script>
-	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-	<!-- jquery ui js -->
-	<script src="bower_components/jquery-ui/jquery-ui.js"></script>
-	<!-- anime js -->
-	<script src="bower_components/animejs/anime.js"></script>
-	<!-- /.page -->
-	<script src="app/app.module.js"></script>
-	<!-- core -->
-	<script src="app/core/core.module.js"></script>
-	<script src="app/core/config.js"></script>
-	<script src="app/core/dataservice.js"></script>
-	<script src="app/core/core.controller.js"></script>
-	<!-- dashboard -->
-	<script src="app/dashboard/dashboard.module.js"></script>
-	<script src="app/dashboard/dashboard.controller.js"></script>
-	<script src="app/dashboard/dashboard.router.js"></script>
-	<!-- about -->
-	<script src="app/about/about.module.js"></script>
-	<script src="app/about/about.controller.js"></script>
-	<script src="app/about/about.router.js"></script>
-	<!-- contact -->
-	<script src="app/contact/contact.module.js"></script>
-	<script src="app/contact/contact.controller.js"></script>
-	<script src="app/contact/contact.router.js"></script>
-	<!-- faq -->
-	<script src="app/faq/faq.module.js"></script>
-	<script src="app/faq/faq.controller.js"></script>
-	<script src="app/faq/faq.router.js"></script>
-	<!-- login -->
-	<script src="app/login/login.module.js"></script>
-	<script src="app/login/login.controller.js"></script>
-	<script src="app/login/login.router.js"></script>
-	<!-- header -->
-	<div data-header-temp></div>
-	<!-- container -->
-	<div class="container-fluid" data-ui-view="default"></div>
-	<!-- footer -->
-	<div data-footer-temp></div>
-	<!-- overlay -->
-	<div class="overlay hide">
-	</div>
-	<!-- navigation -->
-	<nav class=" main-navigation hide">
-		<div class="cover-navigation">
-			<ul data-ng-click="hiddenAllToolTip()">
-				<li>
-					<a href="javascript:;" data-ng-click="$event.stopPropagation();goDashboard()" data-ng-class="{active:locationName==='Dashboard'}">Trang chủ</a>
-				</li>
-				<li>
-					<a href="javascript:;" data-ng-click="$event.stopPropagation();goAbout()" data-ng-class="{active:locationName==='About'}">Giới thiệu công ty</a>
-				</li>
-				<!-- <li>
-					<a href="javascript:;" data-ng-class="{active:locationName==='Collection'}">Bộ sưu tập</a>
-				</li> -->
-				<li>
-					<a href="javascript:;" data-ng-click="$event.stopPropagation();goFAQ()" data-ng-class="{active:locationName==='FAQ'}">Hỏi đáp</a>
-				</li>
-				<li>
-					<a href="javascript:;" data-ng-click="$event.stopPropagation();goContact()" data-ng-class="{active:locationName==='Contact'}">Liên hệ</a>
-				</li>
-			</ul>
-		</div>
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="bower_components/animejs/anime.min.js"></script>
+		<!-- Swip JS -->
+		<script src="bower_components/swiper/dist/js/swiper.min.js"></script>
+		<script src="bower_components/swiper/dist/js/swiper.jquery.min.js"></script>
+		
+		<!-- Full page -->
+		<script type="text/javascript" src="bower_components/fullpage.js/vendors/scrolloverflow.min.js"></script>
+		<script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.js"></script>
+		
+		<script src="app/blocks/block-directive.js"></script>
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+		<!-- /.page -->
+	</head>
 
-	</nav>
-	<!-- search -->
-	<div class="main-search hide" data-ng-click="hiddenAllToolTip()">
-		<div class="input" data-ng-click="$event.stopPropagation()">
-			<input type="text" placeholder="Tìm kiếm">
-			<a href="javascript:;" class="search-icon icon"></a>
-		</div>
-	</div>
-	<a href="javascript:;" class="scroll-top icon hide" data-button-scroll></a>
-</body>
-
+	<body >
+		<div class="container-fluid" data-ui-view="default"></div>
+		<script src="app/app.module.js"></script>
+		<!-- core -->
+		<script src="app/core/core.module.js"></script>
+		<script src="app/core/config.js"></script>
+		<script src="app/core/dataservice.js"></script>
+		<script src="app/core/core.controller.js"></script>
+		<!-- dashboard -->
+		<script src="app/dashboard/dashboard.module.js"></script>
+		<script src="app/dashboard/dashboard.controller.js"></script>
+		<script src="app/dashboard/dashboard.router.js"></script>
+	</body>
 </html>

@@ -1,118 +1,256 @@
-<div class="cover-page dashboard-page-scroll" data-ng-controller="dashboardCtrl as vm">
-		<div class="for-service">
-				<div class="cover">
-						<h2 class="heading-one">
-								<span class="icon icon-heading"></span>
-								<span class="text-heading">
-										Các dịch vụ tiêu biểu
-								</span>
-								<i class="line-heading"></i>
-						</h2>
-						<!-- Heading -->
-						<ul class="list-service">
-								<li>
-										<img src="i/ser01.png" alt="item" class="item">
-										<img src="i/mobi/ser01.png" alt="item-m " class="item-m hidden-lg">
-										<p class="green-text">
-												Thiết kế web
-										</p>
-										<p class="dark-text">
-												Chúng tôi đem đến cho khách hàng những thiết kế web hiện đại nhất, theo xu hướng chung của thế giới.
-										</p>
-								</li>
-								<li>
-										<img src="i/ser02.png" alt="item" class="item">
-										<img src="i/mobi/ser02.png" alt="item-m " class="item-m hidden-lg">
-										<p class="green-text">
-												Lập trình web
-										</p>
-										<p class="dark-text">
-												Chúng tôi lập trình web trên nhiều nền tảng, theo công nghệ mới nhất của thế giới. Tối ưu hiển thị trên mọi thiết bị.
-										</p>
-								</li>
-								<li>
-										<img src="i/ser03.png" alt="item" class="item">
-										<img src="i/mobi/ser03.png" alt="item-m " class="item-m hidden-lg">
-										<p class="green-text">
-												Tư vấn phần mềm
-										</p>
-										<p class="dark-text">
-												Tư vấn các giải pháp công nghệ cho doanh nghiệp tạo dựng thương hiệu, phát triển bền vững. Tư vấn sử dụng các ứng dụng công nghệ hiện đại.
-										</p>
-								</li>
-						</ul>
-						<div class="clear"></div>
-				</div>
+<div class="cover-desvlab" data-ng-controller="dashboardCtrl as vm">
+	<div class="scroll-box" id="fullpage" data-listen-scroll>
+		<div class="ideal-from-idea section">
+			<canvas class="fireworks"></canvas>
+			<div class="main-logo" data-logo-animate></div>
+			<div class="ratio-gradient"></div>
+			<img src="i/desk/universe02.png" alt="universe" class="universe-top-left">
+			<img src="i/desk/universe01.png" alt="" class="universe-bottom-left">
+			<img src="i/desk/universe03.png" alt="" class="universe-bottom-right">
 		</div>
-		<!-- Services -->
-		<div class="for-service for-intro">
-				<div class="cover">
-						<h2 class="heading-one">
-								<span class="icon icon-heading"></span>
-								<span class="text-heading">
-										Giới thiệu công ty
-								</span>
-								<i class="line-heading"></i>
-						</h2>
-						<!-- Heading -->
-						<div class="main-intro">
-								<div class="img-intro">
-										<ul class="list-img">
-												<li data-ng-repeat="item in vm.dataJson.aboutImages">
-														<img src="i/info01.png" alt="info01" data-ng-src="{{item.url}}">
-												</li>
-										</ul>
-								</div>
-								<!-- Img Intro -->
-								<div class="text-intro">
-										<p class="blue-text">
-												{{vm.dataJson.aboutTitle}} 
-										</p>
-										<p class="dark-text">
-												{{vm.dataJson.aboutDesc}} 
-										</p>
-										<a href="javascript:;" class="btn-more" data-ng-click="goAbout()">Chi tiết</a>
-								</div>
-								<!-- Text Intro -->
-								<div class="clear"></div>
+		<!-- IDEAL HERE -->
+		<div class="sir-desvlab section">
+			<div class="cover-sir animated">
+				<div class="cover-img group-tranform">
+					<div class="img-div pink">
+						<i class="before-div"></i>
+					</div>
+					<div class="img-div mr-tuan">
+						<img src="i/desk/design.jpg" alt="MR DO HOANG ANH">
+					</div>
+					<!-- Mr Nguyen Van Tuan -->
+					<div class="img-div mr-nghi">
+						<img src="i/desk/design.jpg" alt="MR DO HOANG ANH">
+					</div>
+					<!-- Mr Tran Viet Nhan Nghi -->
+					<div class="img-div mr-do">
+						<img src="i/desk/design.jpg" alt="MR DO HOANG ANH">
+					</div>
+					<!-- Mr Do Hoang Anh -->
+					<div class="green-right">
+						<div class="cover-center">
+							<p class="white-text">
+								WE ARE
+							</p>
+							<p class="white-text two">
+								<i>DESV</i>LAB
+							</p>
+							<div class="clear"></div>
 						</div>
-						<!-- Main Intro -->
-						<div class="clear"></div>
+					</div>
+					<div class="green-left">
+						<div class="in-green"></div>
+					</div>
+					<div class="clear"></div>
 				</div>
-		</div>
-		<!-- InTro -->
-		<div class="for-service for-product">
-				<div class="cover">
-						<h2 class="heading-one">
-								<span class="icon icon-heading"></span>
-								<span class="text-heading">
-										Các Sản phẩm
-								</span>
-								<i class="line-heading"></i>
-						</h2>
-						<!-- Heading -->
-						<div class="main-pro">
-								<div class="type">
-										<ul>
-												<li>
-														<a class="active" href="javascript:;">Xem Tất Cả</a>
-												</li>
-										</ul>
-								</div>
-								<div class="product-items">
-										<ul>
-												<li data-ng-repeat="item in vm.productsJson.products">
-														<a href="javascript:;">
-																<img src="i/pro01.png" alt="item" data-ng-src="{{item.image}}">
-														</a>
-												</li>
-										</ul>
-								</div>
+				<!-- IMG -->
+				<div class="clear"></div>
+				<div class="cover-text-big cover-img">
+					<div class="img-div pink"></div>
+					
+					<div class="img-div mr-tuan">
+						<div class="cover-text">
+							<p class="name-sir">NGUYEN VAN TUAN</p>
+							<p class="position-sir">Business Manager</p>
+							<p class="detail-text">CO - founder</p>
 						</div>
-						<!-- Main Product -->
-						<div class="clear"></div>
+					</div>
+					<!-- Mr Nguyen Van Tuan -->
+					<div class="img-div mr-nghi">
+						<div class="cover-text">
+							<p class="name-sir">TRAN VIET NHAN NGHI</p>
+							<p class="position-sir">CEO</p>
+							<p class="detail-text">CO - founder</p>
+						</div>
+					</div>
+					<!-- Mr Tran Viet Nhan Nghi -->
+					<div class="img-div mr-do">
+						<div class="cover-text">
+							<p class="name-sir">DO HOANG ANH</p>
+							<p class="position-sir">Design Manager</p>
+							<p class="detail-text">CO - founder</p>
+						</div>
+					</div>
+					<!-- Mr Do Hoang Anh -->
+					<div class="clear"></div>
 				</div>
+				<!-- TEXT -->
+			</div>
 		</div>
-		<!-- InTro -->
+		<!-- SIR DESVLAB -->
+		<div class="service-desvlab section">
+			<div class="left-service">
+				<div class="title-service">
+					<h1 class="title-here">
+						<span class="cover-center">
+							<span class="text-one">
+								OUR
+							</span>
+							<span class="text-tow">
+								SERVICES
+							</span>
+						</span>
+					</h1>
+					<div class="clear"></div>
+					<p class="text-detail">
+						{{dataOurService.desc}} 
+					</p>
+				</div>
+				<a href="javascript:;" class="btn-table-price">Bảng giá dịch vụ</a>
+				<img src="i/desk/universe04.png" alt="universe" class="universe-top-left">
+				<object data="i/desk/gear-svg.svg" type="image/svg+xml" class="gear-bottom-left"></object>
+			</div>
+			<!-- LEFT SERVICE -->
+			<div class="right-service">
+			
+			</div>
+			<!-- RIGHT SERVICE -->
+			<div class="white-div-service">
+				<ul>
+					<li class="each-item" data-ng-repeat="item in packagesOurServices" data-ng-class="{one:$index%4===0,two:$index%4===1,three:$index%4===2,four:$index%4===3}">
+						<img src="i/desk/icon01-service.svg" alt="FLY" data-ng-class="{'icon-one':$index%4=== 0,'icon-two':$index%4=== 1, 'icon-three':$index%4=== 2, 'icon-four':$index%4=== 3}" data-ng-src="{{item.image}}">
+						<h2 class="title-item">{{item.title}}</h2>
+						<p class="detail-item">
+							{{item.desc}}
+						</p>
+					</li>
+					<!-- EACH ITEM -->
+				</ul>
+				<img src="i/desk/logo-svg.svg" alt="LOGO" class="logo-company">
+
+			</div>
+			<!-- WHITE SERVICE -->
+		</div>
+		<!-- SERVICE DESVLAB -->
+		<div class="project-desvlab section">
+			<div class="white-div">
+				<div class="title-project">
+					<h1 class="title-here">
+						<span class="cover-center">
+							<span class="text-one">
+								OUR
+							</span>
+							<span class="text-tow">
+								<i>PRO</i><i>JECTS</i>
+							</span>
+						</span>
+					</h1>
+					<div class="clear"></div>
+					<p class="text-detail">
+						Chúng tôi là một công ty thiết kế web và chúng tôi phát hiện các thiết kế và phương pháp tiếp cận mới. Chúng tôi có một niềm tin mạnh mẽ rằng một thiết kế web mạnh mẽ có thể làm cho bất kỳ doanh nghiệp (hoặc một khởi động hoặc một công ty với nhiều năm trên thị trường) là một thành công. 
+					</p>
+				</div>
+			</div>
+			<!-- WHITE DIV TITLE -->
+			<div class="cover-img-slider" data-slider-animate>
+				
+			</div>
+			<!-- <div class="logo-web-show">
+				<object data="i/desk/saigon-svg.svg" type="image/svg+xml" class="sg-svg"></object>
+			</div> -->
+
+
+
+
+			<!-- <div class="desvlab-swiper-slider">
+				<div class="main-slider" ></div>
+			</div> -->
+			<!-- SLIDER -->
+			<img src="i/desk/universe05.png" alt="universe" class="universe-top-right">
+		</div>
+		<!-- SWIPER PROJECT -->
+		<div class="contact-desvlab section">
+			<div class="title-contact">
+				<h1 class="title-here">
+					<span class="cover-center">
+						<span class="text-one">
+							CONTACT
+						</span>
+						<span class="text-tow">
+							US
+						</span>
+					</span>
+				</h1>
+			</div>
+			<!-- TITLE -->
+			<div class="wrapper-all">
+				<div class="left-contact">
+					<div class="group">
+						<p class="title-yellow">
+							Your Name
+						</p>
+						<div class="group-input">
+							<input type="text" placeholder="Your Name">
+						</div>
+					</div>
+					<!-- GROUP --> 
+					<div class="group">
+						<p class="title-yellow">
+							Phone
+						</p>
+						<div class="group-input">
+							<input type="text" placeholder="Your Phone">
+						</div>
+					</div>
+					<!-- GROUP -->
+					<div class="group">
+						<p class="title-yellow">
+							Email Address
+						</p>
+						<div class="group-input">
+							<input type="text" placeholder="Your Email">
+						</div>
+					</div>
+					<!-- GROUP -->
+					<div class="group">
+						<p class="title-yellow">
+							Message
+						</p>
+						<p class="text-white">
+						</p>
+						<div class="group-input textarea">
+							<textarea placeholder="Your Message" id="customtextarea" data-custom-scroll></textarea>
+						</div>
+					</div>
+					<!-- GROUP -->
+					<div class="clear"></div>
+					<a href="javascript:;" class="btn-contact">
+						Contact <i>Us</i>
+						<img class="fly-svg" src="i/desk/fly-icon.svg" alt="FLY">
+					</a>
+				</div>
+				<!-- LEFT CONTACT -->
+				<div class="right-contact">
+					<p class="title-right">
+						<i>DES</i>VLAB <span>Co., Ltd</span>
+					</p>
+					<div class="group">
+						<p class="text-white">
+							Office Address
+						</p>
+						<p class="title-yellow">
+							17 Dao Trinh Nhat, Hue City
+						</p>
+					</div>
+					<!-- GROUP -->
+					<div class="group">
+						<p class="text-white">
+							Email
+						</p>
+						<p class="title-yellow">
+							desvlab@outlook.com
+						</p>
+					</div>
+					<!-- GROUP -->
+					<a href="javascript:;" class="btn-hot-line">
+						<img class="call-svg" src="i/desk/call-svg.svg" alt="call">
+						<i>Hotline:</i> 090 555 1881
+					</a>
+				</div>
+				<!-- RIGHT CONTACT -->
+				<div class="clear"></div>
+			</div>
+			<!-- end /wrapper-all -->
+		</div>
+	</div>
 </div>
-<!-- Cover-page -->
