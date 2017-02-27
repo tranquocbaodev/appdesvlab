@@ -5,10 +5,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var fs = require('fs');
 
-var readline = require('readline');
-var google = require('googleapis');
-var googleAuth = require('google-auth-library');
-
 var index = require('./routes/index');
 var users = require('./routes/users');
 
